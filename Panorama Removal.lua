@@ -31,9 +31,9 @@ local panorama_buttons =
 local panorama_background = 
 {
 	{ name = "Hide News Panel", value = "JsNewsContainer" },
-    { name = "Hide News Panel Content", value = "NewsPanelLister" },
+    	{ name = "Hide News Panel Content", value = "NewsPanelLister" },
 	{ name = "Hide Player Model", value = "JsMainmenu_Vanity" },
-    { name = "Hide Player Model + Wheel", value = "JsMainmenu_Vanity-Container" },
+    	{ name = "Hide Player Model + Wheel", value = "JsMainmenu_Vanity-Container" },
 	{ name = "Dark Panorama", value = "MainMenuBackground" },
 	{ name = "Dark Panorama With Player", value = "MainMenuMovie" },
 	{ name = "Hide Right Panel", value = "MainMenuFriendsAndParty" },

@@ -51,9 +51,9 @@ local panorama_buttons_game =
 local panorama_background = 
 {
 	{ name = "Hide News Panel", value = "JsNewsContainer" },
-    	{ name = "Hide News Panel Content", value = "NewsPanelLister" },
+    { name = "Hide News Panel Content", value = "NewsPanelLister" },
 	{ name = "Hide Player Model", value = "JsMainmenu_Vanity" },
-    	{ name = "Hide Player Model + Wheel", value = "JsMainmenu_Vanity-Container" },
+    { name = "Hide Player Model + Wheel", value = "JsMainmenu_Vanity-Container" },
 	{ name = "Dark Panorama", value = "MainMenuBackground" },
 	{ name = "Dark Panorama With Player", value = "MainMenuMovie" },
 	{ name = "Hide Right Panel", value = "MainMenuFriendsAndParty" },
@@ -85,6 +85,24 @@ local function IsInGame()
 	end
 end
 
+local function Contains(table, value)
+	if table == nil then
+		return false
+	end
+    
+    if type(table) == "number" then
+        table = ui.get(table)
+    end
+
+    for i=0, #table do
+        if table[i] == value then
+            return true
+        end
+    end
+
+    return false
+end
+
 local mainmenueditor = panorama.loadstring(
 [[
 return {
@@ -108,23 +126,8 @@ local panorama_multiselect_menu = ui.new_multiselect("Misc", "Miscellaneous", "M
 
 local panorama_multiselect_panorama = ui.new_multiselect("Misc", "Miscellaneous", "Panorama Background", panorama_elements)
 
-local function Contains(table, value)
-	if table == nil then
-		return false
-	end
-    
-    if type(table) == "number" then
-        table = ui.get(table)
-    end
-
-    for i=0, #table do
-        if table[i] == value then
-            return true
-        end
-    end
-
-    return false
-end
+ui.set(panorama_multiselect_menu, {panorama_table_buttons_menu[7], panorama_table_buttons_menu[9], panorama_table_buttons_menu[11], panorama_table_buttons_menu[12], panorama_table_buttons_menu[13], panorama_table_buttons_menu[14], panorama_table_buttons_menu[15], panorama_table_buttons_menu[16],panorama_table_buttons_menu[17]})
+ui.set(panorama_multiselect_game, {panorama_table_buttons_game[1], panorama_table_buttons_game[2], panorama_table_buttons_game[4], panorama_table_buttons_game[5], panorama_table_buttons_game[6], panorama_table_buttons_game[7], panorama_table_buttons_game[9], panorama_table_buttons_game[10], panorama_table_buttons_game[12],})
 
 local function PanoramaButtons()
 

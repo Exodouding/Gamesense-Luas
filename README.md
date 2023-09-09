@@ -4,5 +4,5 @@
 
 • Panorama Removal : https://youtu.be/I4HILl7oGSw | https://gamesense.pub/forums/viewtopic.php?id=40309
 
-• Skybox Changer : https://youtu.be/Ftvy702Pl18 | https://gamesense.pub/forums/viewtopic.php?id=550359
+• Skybox Changer : https://youtu.be/Ftvy702Pl18 | https://gamesense.pub/forums/viewtopic.php?id=43104
 

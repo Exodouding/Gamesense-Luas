@@ -23,7 +23,7 @@ local Skyboxes =
 	["Night (2)"] = "sky_csgo_night02b",
 	["Night (Flat)"] = "sky_csgo_night_flat",
 	["Rainy"] = "vietnam",	
-    ["Tibet"] = "cs_tibet",
+   	["Tibet"] = "cs_tibet",
 	["Vertigo"] = "office"
 }
 
